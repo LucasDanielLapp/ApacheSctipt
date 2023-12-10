@@ -14,7 +14,7 @@ Luego lo ejecutamos(asi es en linux)
 ./apache.sh
 ```
 Lo primero que ara sera :
-Preguntarnos el nombre del archivo .conf que querramos crear, tenemos que poner la terminaciòn .conf es automatico.
+Preguntarnos el nombre del archivo .conf que querramos crear, no tenemos que poner la terminaciòn .conf es automatico.
 Luego nos pedira nuestra contraseña, ya que es un acciòn que requiere de permisos de super usuario.
 Luego el ServerName sin (.es).
 Luego el nombre donde està ubicado nuestra pagina,no es necesario colocar /var/www/ ya que es automatico y en caso que tu web no se encuentre ahi es muy fàcil editar el còdigo.
