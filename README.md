@@ -2,11 +2,11 @@
  ## Instalaciòn 
   
   Primero tendremos que poner este comando como administrador en nuestra termi    nal para poder usar el script
-  ``sh
+  ```sh
   sudo chown -R $USER:$USER /var/www/
- ```
- Luego en la misma carpeta donde los descargamos.le daremos permiso para que     actue como un ejecutable
- ``sh
+  ```
+  Luego en la misma carpeta donde los descargamos.le daremos permiso para que     actue como un ejecutable
+ ```sh
  chmod +x apache.sh
  ```
  Luego lo ejecutamos(asi es en linux)
