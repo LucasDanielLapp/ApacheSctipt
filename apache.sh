@@ -2,22 +2,12 @@
 
 #Esto es parte de un queño proyecto que estoy haciendo para automatizar la creaciones de documentos para el localhost
 
-
-#falta :
-#No toca la configuracion de (etc/hosts) necesario para activar un puerto
-
-#No se reinicia automaticamente
-
-
-
-
-
 #Code
 
-#Ruta
+#Ruta one sites-availbles
 ruta="/etc/apache2/sites-available/"
-
-
+#ruta dos 
+rutaTwo="/etc/hosts"
 echo "Name of new fill of configuration web"
 
 read nameConf #nombre del archivo de configuracion
@@ -54,5 +44,22 @@ else
  echo "</VirtualHost>" | sudo tee -a $ruta$nameConf.conf
 
  #Cerramos la estructura bàsica de un virtualHost
+
+ #Lo que tenemos que hacer a continuacion es entrar en la carpeta /etc y agregra nuesta ip publica y el nombre , Como la ip publica suele ser la misma en casi todos lados lo capiaremos en texto plano y para el nombre usaremos el ServerAlias
+  sudo a2ensite $nameConf 
+  echo "
+    127.0.0.1            www.$ServerName.es" | sudo tee -a $rutaTwo
+
+ systemctl reload apache2
+
+
+
+
+
+
+
+
+
+
 fi  
 
